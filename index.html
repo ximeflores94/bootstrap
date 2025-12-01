@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap demo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="miestilo.css">
+</head>
+
+<div class="container">
+  <h1 id="inicio">
+    <img src="imagenes/título.png" alt="" width="300px">
+  </h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <!--<a class="navbar-brand" href="#">Navbar</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sinopsis">SINOPSIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer">AVENTURA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proceso">PROCESO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#autor">AUTOR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </body>
+  <div class="row">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="imagenes/Frame 3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor:pointer">INICIA TU AVENTURA</h5>
+            <p>Sumergete en la historia de moro y conviertete en un guerrero Z</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/banner02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 href="#proceso" style="cursor: pointer">PROCESO DE CREACION</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<div class="card" style="width: 1000px;">
+  <div class="card-body">
+    <h5 id="sinopsis" class="card-title"><img src="imagenes/sinopsis.png" alt=""></h5>
+    <p class="card-text">Hace 10 millones de años, una criatura maligna amenazaba la paz de la galaxia, su nombre era
+      moro... moro era capaz de absorber la energía vital de los planetas como si nada, se alimentaba de ellos, cada
+      planeta que consumía hacia que aumentara su poder... para ese entonces los guerreros de la tierra no pudieron
+      hacer nada en su contra, su poder era descomunal, por lo que los seres divinos de la galaxia se vieron forzados a
+      intervenir. fue entonces cuando el gran kaio-shin, utilizó su poder único para encerrar la magia de esta bestia,
+      con esto la patrulla galáctica logró su captura y fue condenado a muerte, lamentablemente, nadie tenía el poder
+      suficiente para matarlo, por lo que su condena se redujo a cadena perpetua. hace unos días escapó de prisión y se
+      encuentra vagando por la galaxia, devorando planetas e incrementando su poder.... la patrulla galáctica necesita
+      la ayuda de los guerreros más fuertes del universo, goku y vegeta.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 1000px ">
+  <img src="imagenes/diseno.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Se comenzó con el proceso de “pensar”, para ordenar ideas de como iría la historia, lo primero fue leer los mangas de la saga de moro, para luego ordenarlo en un mapa conceptual y visualizar mejor donde podría poner las bifurcaciones necesarias para darle continuidad a la historia.</p>
+  </div>
+</div>
+
+<div class="card mb-3" style="width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-5 col-sm-4">
+      <img src="imagenes/pantallas.png" class="img-fluid rounded-start" alt="" style="margin-top: 100px;">
+    </div>
+    <div class="col-md-7 col-sm-8">
+      <div class="card-body">
+        <h5 id="proceso" class="card-title"><img src="imagenes/PROCESO.png" alt=""></h5>
+        <p class="card-text">una vez definida la historia que se quería contar, comienza el proceso de diseño, donde comienzan las decisiones de que imágenes se van a utilizar, como será la portada, las pantallas de final de historia, la historia en si, crear los diálogos, estilo de los botones, entre otro, un trabajo arduo, y que, como en todo proceso, puede ir mutando en el camino. teniendo diseñada la aventura, continúa la fase de programación, la etapa en la que se la vida a todo lo plasmado en papel. gracias al diseño previo, la programación se hizo mas sencilla y rápida, sólo era cuestión de armar las diferentes pantallas en base al diseño creado. Lás técnicas utilizadas más relevantes fueron el uso de máquinas de estados para transitar por las diferentes pantallas y el uso de funciones para ordenar el código y resumirlo un poco. Pero en su totalidad, se trabajo con ciclos for, condicionales, máquinas de estado, funciones y alguno que otra cosita para hacerlo más interesante, como el sonido, pequeñas animaciones,hover en botones, entre otros.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3" style="width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-5 col-sm-4">
+      <img src="imagenes/Auto.png" class="img-fluid rounded-start" alt="" style="margin-top: 100px;">
+    </div>
+    <div class="col-md-7 col-sm-8">
+      <div class="card-body">
+        <h5 id="autor" class="card-title"><img src="imagenes/Autor.png" alt=""></h5>
+        <p class="card-text">¡Hola! mi nombre es ximena flores y esta es mi aventura gráfica, en este apartado les
+          cuento un poco de como fue que me decidí por hacer una historia de dragon ball... cuando era pequeña, teníamos
+          una televisión que compartíamos con mis hermanos, ellos siempre veían dragon ball, como yo era la más pequeña,
+          veía lo que ellos veían, pero no me molestaba porque a la larga, le terminé tomando cariño a la serie, crecí
+          viendola, y hoy en día es una de mis favoritas, al punto de coleccionar los mangas de la serie tambien. Fue
+          por esto que cuando se nos dio la tarea de hacer un juego con una serie animada cualquiera, no lo pensé dos
+          veces, tenía que ser dragon ball... ¡pero! no quería que fuera una historia de las que ya se conocen, las que
+          están televisadas, no, no, quería presentarles la continuación de la historia que solo se encuentra en mangas,
+          aun no televisada... la saga de moro.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <!-- Button trigger modal -->
+<button class="boton-aventura" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  INICIAR AVENTURA
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><img src="imagenes/título.png" width="200px" alt=""></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body contenedor-aventura">
+        <iframe src="aventura/index.html" frameborder="0" width="650" height="490"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button class="boton-aventura" type="button" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+   <a href="#inicio"></a>
+  <button class="boton-aventura" type="button">INICIO</button>
+   </a>
+</div>
+
+<div class="row">
+  <div>
+    <img src="imagenes/dragon.png" alt="" class="img-fluid" width="1600px">
+
+  </div>
+</div>
+
+<footer>
+  <h5><img src="imagenes/título.png" alt=""></h5>
+</footer>
+
+</body>
+
+</html>
